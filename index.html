@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז ההודעות</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="home-screen" class="screen active">
+            <div class="header">מרכז ההודעות</div>
+            <div class="search-bar">
+                <input type="text" placeholder="חיפוש הודעות...">
+            </div>
+            <div class="social-icons">
+                <div class="social-icon" style="background-color: #3b5998;">f</div>
+                <div class="social-icon" style="background-color: #0e76a8;">in</div>
+                <div class="social-icon" style="background-color: #ea4335;">G</div>
+                <div class="social-icon" style="background-color: #25D366;">W</div>
+                <div class="social-icon" style="background-color: #888;">•••</div>
+            </div>
+            <div class="message-filters">
+                <div class="filter" onclick="filterMessages('read')">נקראו</div>
+                <div class="filter" onclick="filterMessages('unread')">לא נקראו</div>
+                <div class="filter active-filter" onclick="filterMessages('all')">הכל</div>
+            </div>
+            <div id="message-list" class="message-list">
+                <!-- Messages will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div id="message-screen" class="screen">
+            <!-- Message content will be dynamically inserted here -->
+        </div>
+
+        <div class="bottom-nav">
+            <div class="nav-item active" onclick="showScreen('home-screen')">הודעות</div>
+            <div class="nav-item" onclick="alert('מסך משימות עדיין לא מומש')">משימות</div>
+            <div class="nav-item" onclick="alert('מסך אנשי קשר עדיין לא מומש')">אנשי קשר</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
