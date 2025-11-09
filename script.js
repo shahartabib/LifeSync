@@ -102,4 +102,74 @@ function showScreen(screenId) {
 function toggleOptions(optionsId) {
     const allOptions = document.querySelectorAll('.options-container');
     const clickedOptions = document.getElementById(optionsId);
-    allOptions.
+
+    // Hide all other options
+    allOptions.forEach(option => {
+        if (option.id !== optionsId) {
+            option.style.display = 'none';
+        }
+    });
+
+    // Toggle the clicked option
+    if (clickedOptions.style.display === 'block') {
+        clickedOptions.style.display = 'none';
+    } else {
+        clickedOptions.style.display = 'block';
+    }
+}
+
+// Send reply
+function sendReply() {
+    const textarea = document.querySelector('#reply-box textarea');
+    const messageText = textarea.value.trim();
+
+    if (messageText) {
+        alert('ההודעה נשלחה: ' + messageText);
+        textarea.value = '';
+        document.getElementById('reply-box').style.display = 'none';
+    } else {
+        alert('אנא הזן תוכן להודעה');
+    }
+}
+
+// Show AI suggested reply
+function showAIReply() {
+    const suggestions = [
+        'תודה על ההודעה, אחזור אליך בהקדם',
+        'נשמע מעניין, בוא נקבע שיחה',
+        'אשמח לדון בזה פנים אל פנים'
+    ];
+    const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
+    alert('הצעה מה-AI:\n\n' + randomSuggestion);
+}
+
+// Show AI follow-up options
+function showAIFollowUp() {
+    const times = ['בעוד שעה', 'מחר בבוקר', 'בעוד שבוע'];
+    const randomTime = times[Math.floor(Math.random() * times.length)];
+    alert('התזכורת למענה תוגדר ל: ' + randomTime);
+}
+
+// Set reminder
+function setReminder(type) {
+    if (type === 'קירבה') {
+        alert('תזכורת קירבה הוגדרה - תקבל התראה כשתהיה קרוב לאיש הקשר');
+    } else if (type === 'זמן') {
+        alert('תזכורת זמן הוגדרה - תקבל התראה בעוד שעתיים');
+    }
+}
+
+// Save contact
+function saveContact() {
+    alert('איש הקשר נשמר בהצלחה');
+}
+
+// Schedule meeting
+function scheduleMeeting() {
+    alert('פגישה נקבעה ליום ראשון בשעה 10:00');
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    loadMessages();
+});
