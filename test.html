@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .test-box {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Connection Test - If you see this, the server works!</h1>
+    <div class="test-box">
+        <h2>CSS Test</h2>
+        <p>If this box has a white background and shadow, CSS is loading.</p>
+    </div>
+    <div class="test-box">
+        <h2>JavaScript Test</h2>
+        <p id="js-test">JavaScript not loaded yet...</p>
+    </div>
+    <script>
+        document.getElementById('js-test').textContent = 'JavaScript is working! ✓';
+        document.getElementById('js-test').style.color = 'green';
+        document.getElementById('js-test').style.fontWeight = 'bold';
+    </script>
+</body>
+</html>
