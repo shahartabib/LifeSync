@@ -1,0 +1,120 @@
+# Backend
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/wheels/
+backend/pip-wheel-metadata/
+backend/share/python-wheels/
+backend/*.egg-info/
+backend/.installed.cfg
+backend/*.egg
+backend/MANIFEST
+backend/.env
+backend/.venv
+backend/venv/
+backend/env/
+backend/.vscode/
+backend/.idea/
+backend/*.swp
+backend/*.swo
+backend/*~
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.dmypy.json
+backend/dmypy.json
+backend/.coverage
+backend/htmlcov/
+
+# Frontend Web
+frontend/web/node_modules/
+frontend/web/.next/
+frontend/web/out/
+frontend/web/.env.local
+frontend/web/.env.*.local
+frontend/web/*.pem
+frontend/web/.vscode/
+frontend/web/.idea/
+frontend/web/coverage/
+frontend/web/dist/
+frontend/web/build/
+frontend/web/.DS_Store
+frontend/web/*.log
+frontend/web/npm-debug.log*
+frontend/web/yarn-debug.log*
+frontend/web/yarn-error.log*
+
+# Mobile
+frontend/mobile/node_modules/
+frontend/mobile/.expo/
+frontend/mobile/.expo-shared/
+frontend/mobile/dist/
+frontend/mobile/npm-debug.*
+frontend/mobile/*.jks
+frontend/mobile/*.p8
+frontend/mobile/*.p12
+frontend/mobile/*.key
+frontend/mobile/*.mobileprovision
+frontend/mobile/*.orig.*
+frontend/mobile/web-build/
+frontend/mobile/.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+*.logs
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Build
+dist/
+build/
